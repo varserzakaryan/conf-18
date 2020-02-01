@@ -34,5 +34,9 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.17"
+  },
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
   }
 }
