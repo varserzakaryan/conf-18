@@ -25,9 +25,9 @@
     <p class="Credits">
       Design and branding by
       <a href="http://digitalfactory.co/" target="_blank">Digital Factory</a>,
-      coded in Vue.js by <a href="https://github.com/modularcoder" target="_blank">@modularcoder</a>,
-      <a href="https://github.com/nairihar" target="_blank">@nairihar</a> and
-      <a href="https://github.com/JSConfArmenia/conf-18/graphs/contributors" target="_blank">others</a>.
+      coded in Vue.js by <a href="https://github.com/nairihar" target="_blank">@nairihar</a>,
+      <a href="https://github.com/tovmassian" target="_blank">@tovmassian</a> and
+      <a href="https://github.com/NodeJSArmenia/conf-20/graphs/contributors" target="_blank">others</a>.
     </p>
 
     <div class="FooterBgLeft"></div>

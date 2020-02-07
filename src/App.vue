@@ -3,13 +3,13 @@
     <AppHeader />
     <Intro />
     <About />
-    <Schedule />
-    <Speakers />
-    <Sponsors />
+    <!-- <Schedule /> -->
+    <!-- <Speakers /> -->
+    <!-- <Sponsors /> -->
     <Team />
     <Location />
     <Faq />
-    <Quiz />
+    <!-- <Quiz /> -->
     <AppFooter />
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
 
 <style lang="scss">
 
-@import '/fonts/BambinoNew/stylesheet.css';
+@import '/fonts/Barlow/stylesheet.css';
 @import './_styles/colors';
 
 #app {
