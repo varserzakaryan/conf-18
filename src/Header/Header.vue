@@ -29,8 +29,8 @@
         <a class="Item" href="#Sponsors" v-smooth-scroll="navConfig" v-on:click="close">Sponsors</a>
         <a class="Item" href="#Team" v-smooth-scroll="navConfig" v-on:click="close">Team</a>
         <a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a>
+        <a class="Item" href="#Jobs" v-smooth-scroll="navConfig" v-on:click="close">Jobs</a>
         <a class="Item" href="#Faq" v-smooth-scroll="navConfig" v-on:click="close">Faq</a>
-        <a class="Item" href="#Quiz" v-smooth-scroll="navConfig" v-on:click="close">Quiz</a>
         <a class="Item RequestInvite" href="http://bit.ly/joinJSConf2018" target="_blank" >Request an Invite</a>
       </nav>
     </div>
@@ -135,14 +135,13 @@ export default {
     display: flex;
     align-items: center;
     padding: .5em .8em;
-    color: #000;
+    color: #fff;
     margin: 0 .1em;
     text-decoration: none;
     font-weight: 600;
     transition: all .2s ease;
     position: relative;
     overflow: hidden;
-    font-weight: 600;
 
     &:after {
       content: " ";
@@ -159,9 +158,8 @@ export default {
 
     &.active,
     &:hover {
-      &:after {
-        top: 0;
-      }
+      color: #6CC24A;
+      border-bottom: 2px solid #6CC24A;
     }
 
     &.RequestInvite {
@@ -224,7 +222,7 @@ export default {
     top: 0;
     position: absolute;
     right: 0;
-    margin: 8px 15px;
+    margin: 25px 25px;
     font-size: 30px;
   }
 

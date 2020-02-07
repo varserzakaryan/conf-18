@@ -14,7 +14,7 @@ export default {
   props: {
     size: {
       type: Number,
-      default: 100,
+      default: 120,
     },
     variation: {
       type: String,
@@ -26,7 +26,7 @@ export default {
 
 <style scoped lang="scss">
 .LogoImg {
-  padding-bottom: 80%;
+  padding-bottom: 50%;
   background-repeat: no-repeat;
   background-image: url('./Logo.svg');
   background-size: contain;
