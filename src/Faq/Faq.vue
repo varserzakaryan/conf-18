@@ -1,6 +1,6 @@
 <template>
   <div class="Faq" id="Faq">
-    <h2 class="Title"> FREQUENTLY ASKED QUESTIONS</h2>
+    <h2 class="Title"> Frequently Asked <span>Questions</span></h2>
 
     <div class="row Answers">
       <div class="col-md-6">
@@ -111,28 +111,35 @@ export default {
 }
 
 a {
-  color: #4bb463;
+  color: #6cc24a;
   font-weight: bold;
 }
 
 
 .Title {
-  text-transform: uppercase;
   text-align: center;
   margin-bottom: 50px;
-  color: #198dbf;
+  color: #fff;
 }
 
 .Question {
-  color: #333;
+  color: #fff;
 }
 
 .Answer {
   margin-bottom: 1.5em;
+  font-family: Barlow;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
 }
 
 .Answers {
   width: 65%;
+  color: #d7d7d7;
 }
 
 @media (max-width: 768px) {

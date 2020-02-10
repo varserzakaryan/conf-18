@@ -11,7 +11,7 @@
           href="#Intro"
           v-smooth-scroll="navConfig" v-on:click="close">
           <Logo
-            :variation="isSticked ? 'compact' : isOpen ? 'open' : 'full'" />
+            :variation="full" />
         </a>
       </div>
 
@@ -102,14 +102,15 @@ export default {
 
   &.-sticked {
     position: fixed;
-    min-height: 55px;
-    background: #fff;
-    box-shadow: 0px 8px 30px 8.16px rgba(162, 162, 162, 0.3);
+    min-height: 80px;
+    background: #3A3A3A;
+    box-shadow: 0px -5px 15px 8.16px rgba(162, 162, 162, 0.3);
   }
 
 }
 
 .HeaderContainer {
+  max-width: 1400px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -130,6 +131,13 @@ export default {
   // width: 100%;
   flex-wrap: wrap;
   justify-content: flex-end;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
 
   .Item {
     display: flex;
@@ -163,9 +171,17 @@ export default {
     }
 
     &.RequestInvite {
-      border: 2px solid #ffdd00;
+      border: 2px solid #6cc24a;
       border-radius: 2px;
-      margin-left: 10px;
+      margin-left: 40px;
+      font-family: Barlow;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.25;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
 
       &:after {
         // display: none;
@@ -173,8 +189,8 @@ export default {
       }
 
       &:hover {
-        // background-color: #ffdd00;
-        // color: #fff;
+        background-color: #6cc24a;
+        color: #fff;
       }
     }
   }
@@ -189,7 +205,7 @@ export default {
     position: absolute;
     left: 0;
     top: -500px;
-    background: #fff;
+    background: #3A3A3A;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -222,12 +238,12 @@ export default {
     top: 0;
     position: absolute;
     right: 0;
-    margin: 25px 25px;
+    margin: 15px 25px;
     font-size: 30px;
   }
 
   .Header.-open {
-    background: #fff;
+    background: #3A3A3A;
   }
 }
 </style>

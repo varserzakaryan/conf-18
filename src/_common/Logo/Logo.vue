@@ -32,7 +32,7 @@ export default {
   background-size: contain;
   transition: all .3s ease;
 
-  &.compact, &.open {
+  &.open {
     height: 26px;
     padding-bottom: 0;
     background-size: 100px;
@@ -42,10 +42,6 @@ export default {
 
   &.open {
     margin-top: -33px;
-  }
-
-  &.compact {
-    margin-top: 0px;
   }
 }
 </style>

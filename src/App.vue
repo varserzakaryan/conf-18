@@ -57,7 +57,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
   color: $text-primary;
-  background-color: $bg-primary;
+  background-image: url(../public/bg-pattern.png);
 }
 
 .Container {
@@ -127,10 +127,15 @@ export default {
 }
 
 .Title {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: .2em;
-  text-transform: uppercase;
+  text-align: center;
+  color: white;
+
+  span {
+    color: #6cc24a;
+  }
 }
 
 .Subtitle {

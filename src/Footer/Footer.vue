@@ -19,18 +19,16 @@
     <div class="PressRelease">
       Press Release
       <a href="/Press-Release-EN.pdf" target="_blank">En</a> |
-      <a href="/Press-Release-AM.pdf" target="_blank">Am</a>
+      <a href="/Press-Release-AM.pdf" class="AM" target="_blank">Am</a>
     </div>
 
     <p class="Credits">
       Design and branding by
       <a href="http://digitalfactory.co/" target="_blank">Digital Factory</a>,
-      coded in Vue.js by <a href="https://github.com/nairihar" target="_blank">@nairihar</a>,
-      <a href="https://github.com/tovmassian" target="_blank">@tovmassian</a> and
-      <a href="https://github.com/NodeJSArmenia/conf-20/graphs/contributors" target="_blank">others</a>.
+      coded in Vue.js by <a class="Devs" href="https://github.com/nairihar" target="_blank">@nairihar</a>,
+      <a class="Devs" href="https://github.com/tovmassian" target="_blank">@tovmassian</a> and
+      <a class="Devs" href="https://github.com/NodeJSArmenia/conf-20/graphs/contributors" target="_blank">others</a>.
     </p>
-
-    <div class="FooterBgLeft"></div>
   </div>
 </template>
 
@@ -46,24 +44,13 @@ export default {
 
 <style scoped lang="scss">
 .Footer {
-  min-height: 600px;
+  min-height: 350px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
   position: relative;
-}
-
-.FooterBgLeft {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('./FooterBgLeft.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
+  padding-bottom: 50px;
 }
 
 .LogoContainer {
@@ -73,6 +60,25 @@ export default {
 .SocialLinks {
   display: flex;
   margin-bottom: 15px;
+}
+
+.PressRelease {
+  font-family: Barlow;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+
+  a {
+    color: #6cc24a;
+    text-transform: uppercase;
+  }
+
+  .AM {
+    color: white;
+  }
 }
 
 .SocialIcon {
@@ -131,22 +137,31 @@ export default {
 
 .Credits {
   margin: 20px;
-  font-size: .8em;
+  font-family: Barlow;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+
+  a {
+    color: #6cc24a;
+  }
+
+  .Devs {
+    color: #fff;
+  }
 }
 
 a:not(.LogoLink):not(.SocialIcon) {
   text-decoration: underline;
-  color: inherit;
   font-weight: bold;
 }
 
 @media (max-width: 500px) {
   .Footer {
     min-height: 500px;
-  }
-
-  .FooterBgLeft {
-    background-color: #ffe549;
   }
 }
 

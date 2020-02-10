@@ -1,12 +1,14 @@
 <template>
   <section class="Team" id="Team">
     <div class="Container">
-      <h2 class="Title">Core Team</h2>
+      <h2 class="Title">Incredible <span>Team</span></h2>
 
-      <div class="row">
+      <div class="row"
+        v-for="(team, teamIndex) in teams"
+        :key="teamIndex">
         <div
           class="col MemberCol"
-          v-for="(member, index) in members"
+          v-for="(member, index) in team.members"
           :key="index">
           <div class="Member">
             <div
@@ -28,47 +30,79 @@
 <script>
 export default {
   data: () => ({
-    members: [
+    teams: [
       {
-        img: '/team/Alexander_Adamyan.jpg',
-        name: 'Alexander Adamyan',
-        position: 'Co-Founder at Simply Technologies',
+        members: [
+          {
+            img: '/team/Nairi_Harutyunyan.jpg',
+            name: 'Nairi Harutyunyan',
+            position: 'Backend Engineer at Screenful, Co-Founder at Node.js Armenia',
+          },
+          {
+            img: '/team/Anna_Harutyunyan.jpg',
+            name: 'Anna Harutyunyan',
+            position: 'Project Manager at Node.js Armenia',
+          },
+          {
+            img: '/team/Khachatur_Tovmasyan.jpg',
+            name: 'Khachatur Tovmasyan',
+            position: 'Lead Front-End Engineer at SFL, Co-Founder at Node.js Armenia',
+          },
+          {
+            img: '/team/Svetlana_Hovhannisyan.jpg',
+            name: 'Svetlana Hovhannisyan',
+            position: 'Founding Software Engineer at Cambridge Semantics',
+          },
+          {
+            img: '/team/Vardges_Vardanyan.jpg',
+            name: 'Vardges Vardanyan',
+            position: 'Javascript Engineer at VMWare',
+          },
+        ],
       },
       {
-        img: '/team/Varser_Zakaryan.jpg',
-        name: 'Varser Zakaryan',
-        position: 'Project Manager at JavaScript Conference Armenia',
+        members: [
+          {
+            img: '/team/Alexander_Adamyan.jpg',
+            name: 'Alexander Adamyan',
+            position: 'Co-Founder at Simply Technologies',
+          },
+          {
+            img: '/team/Varser_Zakaryan.jpg',
+            name: 'Varser Zakaryan',
+            position: 'Project Manager at JavaScript Conference Armenia',
+          },
+          {
+            img: '/team/Gevorg_Harutyunyan.jpg',
+            name: 'Gevorg Harutyunyan',
+            position: 'Front-End Architect at Screenful, Founder of ModularCode',
+          },
+          {
+            img: '/team/Rouben_Meschian.jpg',
+            name: 'Rouben Meschian',
+            position: 'Founding Software Engineer at Cambridge Semantics',
+          },
+          {
+            img: '/team/Edgar_Marukyan.jpg',
+            name: 'Edgar Marukyan',
+            position: 'CTO at Renderforest',
+          },
+        ],
       },
-      {
-        img: '/team/Gevorg_Harutyunyan.jpg',
-        name: 'Gevorg Harutyunyan',
-        position: 'Front-End Architect at Screenful, Founder of ModularCode',
-      },
-      {
-        img: '/team/Rouben_Meschian.jpg',
-        name: 'Rouben Meschian',
-        position: 'Founding Software Engineer at Cambridge Semantics',
-      },
-      {
-        img: '/team/Edgar_Marukyan.jpg',
-        name: 'Edgar Marukyan',
-        position: 'CTO at Renderforest',
-      },
-    ]
-  })
+    ],
+  }),
 };
 </script>
 
 <style scoped lang="scss">
-  .Title {
-    text-align: center;
-    color: #198dbf;
-    margin-bottom: 30px;
-  }
 
   .MemberCol {
     display: flex;
     justify-content: center;
+  }
+
+  .Title {
+    margin-bottom: 50px;
   }
 
   .Member {
@@ -93,18 +127,29 @@ export default {
 
   .Member:hover {
     .Img {
-      filter: grayscale(0);
+      filter: grayscale(1);
     }
   }
 
   .Name {
-    margin-bottom: 0;
-    font-size: 1em;
+    font-family: Barlow;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
   }
 
   .Position {
-    color: #999;
-    font-size: .6em;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 0.35px;
+    text-align: center;
+    color: #e8e8e8;
   }
 
   @media (max-width: 600px) {

@@ -43,7 +43,6 @@ export default {
 
 .Title {
   font-size: 75px;
-  text-transform: uppercase;
   color: #ffdd00;
   margin-bottom: 0;
   line-height: 1em;
