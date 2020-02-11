@@ -16,4 +16,7 @@ Vue.use(Tooltip);
 
 new Vue({
   render: h => h(App),
+  mounted: () => {
+    console.log(1);
+  },
 }).$mount('#app');

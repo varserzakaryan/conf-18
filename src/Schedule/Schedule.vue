@@ -89,9 +89,6 @@
 import topics from '@/_services/topics';
 import speakers from '@/_services/speakers';
 
-import TimeScale from './TimeScale';
-import TopicItem from './TopicItem';
-
 export default {
   data: () => ({
     topics,
@@ -103,8 +100,6 @@ export default {
     },
   },
   components: {
-    TimeScale,
-    TopicItem,
   },
 };
 </script>

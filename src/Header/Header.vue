@@ -25,7 +25,8 @@
       <nav class="Navigation" v-smooth-scroll="navConfig">
         <a class="Item" href="#About" v-smooth-scroll="navConfig" v-on:click="close">About</a>
         <!--
-          <a class="Item" href="#Schedule" v-smooth-scroll="navConfig" v-on:click="close">Schedule</a>
+          <a class="Item" href="#Schedule" v-smooth-scroll="navConfig"
+          v-on:click="close">Schedule</a>
           -->
         <a class="Item" href="#Speakers" v-smooth-scroll="navConfig" v-on:click="close">Speakers</a>
         <a class="Item" href="#Sponsors" v-smooth-scroll="navConfig" v-on:click="close">Sponsors</a>
@@ -224,8 +225,11 @@ export default {
   }
 
   .Navigation .Item {
-    width: 50%;
     justify-content: center;
+
+    &.RequestInvite {
+      margin: 10px 0px;
+    }
   }
 
   .NavigationButton {

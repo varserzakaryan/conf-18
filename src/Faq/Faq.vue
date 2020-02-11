@@ -143,21 +143,8 @@ a {
 }
 
 @media (max-width: 768px) {
-  .Faq {
-    padding: 50px 0 20px;
-  }
-
   .Answers {
     width: 100%;
-  }
-
-  .Title {
-    font-size: 1.6em;
-    margin-bottom: 20px;
-  }
-
-  .Question {
-    font-size: 1em;
   }
 }
 </style>

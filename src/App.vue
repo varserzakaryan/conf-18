@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Welcome />
     <AppHeader />
     <Intro />
     <About />
@@ -15,6 +16,7 @@
 </template>
 
 <script>
+import Welcome from './Welcome/Welcome.vue';
 import AppHeader from './Header/Header.vue';
 import Intro from './Intro/Intro.vue';
 import About from './About/About.vue';
@@ -30,6 +32,7 @@ import AppFooter from './Footer/Footer.vue';
 export default {
   name: 'app',
   components: {
+    Welcome,
     AppHeader,
     Intro,
     About,
@@ -57,7 +60,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
   color: $text-primary;
-  background-image: url(../public/bg-pattern.jpg);
+  background: url(../public/bg-pattern.jpg) #3A3A3A;
 }
 
 .Container {
