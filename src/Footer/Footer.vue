@@ -24,7 +24,7 @@
 
     <p class="Credits">
       Design and branding by
-      <a href="http://digitalfactory.co/" target="_blank">Digital Factory</a>,
+      <a href="https://www.behance.net/Davidtiger" target="_blank">thedesigner</a>,
       coded in Vue.js by <a class="Devs" href="https://github.com/nairihar" target="_blank">@nairihar</a>,
       <a class="Devs" href="https://github.com/tovmassian" target="_blank">@tovmassian</a> and
       <a class="Devs" href="https://github.com/NodeJSArmenia/conf-20/graphs/contributors" target="_blank">others</a>.
@@ -44,13 +44,14 @@ export default {
 
 <style scoped lang="scss">
 .Footer {
-  min-height: 350px;
+  min-height: 450px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
   position: relative;
   padding-bottom: 50px;
+  background-image: url(./bg.png);
 }
 
 .LogoContainer {
@@ -157,12 +158,6 @@ export default {
 a:not(.LogoLink):not(.SocialIcon) {
   text-decoration: underline;
   font-weight: bold;
-}
-
-@media (max-width: 500px) {
-  .Footer {
-    min-height: 500px;
-  }
 }
 
 </style>

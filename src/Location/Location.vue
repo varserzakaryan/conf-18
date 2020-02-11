@@ -19,8 +19,12 @@ export default {
 
 <style scoped lang="scss">
 .Location {
-  padding: 50px 0 100px 0;
+  padding: 50px 0 0 0;
   position: relative;
+}
+
+.Title {
+  margin-bottom: 50px;
 }
 
 .MapContainer {

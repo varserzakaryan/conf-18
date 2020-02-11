@@ -57,7 +57,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
   color: $text-primary;
-  background-image: url(../public/bg-pattern.png);
+  background-image: url(../public/bg-pattern.jpg);
 }
 
 .Container {
@@ -141,6 +141,13 @@ export default {
 .Subtitle {
   font-size: 24px;
   font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  #app {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 </style>

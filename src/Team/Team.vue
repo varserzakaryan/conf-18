@@ -34,27 +34,27 @@ export default {
       {
         members: [
           {
-            img: '/team/Nairi_Harutyunyan.jpg',
+            img: '/team/Nairi_Harutyunyan.png',
             name: 'Nairi Harutyunyan',
             position: 'Backend Engineer at Screenful, Co-Founder at Node.js Armenia',
           },
           {
-            img: '/team/Anna_Harutyunyan.jpg',
+            img: '/team/Anna_Harutyunyan.png',
             name: 'Anna Harutyunyan',
             position: 'Project Manager at Node.js Armenia',
           },
           {
-            img: '/team/Khachatur_Tovmasyan.jpg',
+            img: '/team/Khachatur_Tovmasyan.png',
             name: 'Khachatur Tovmasyan',
             position: 'Lead Front-End Engineer at SFL, Co-Founder at Node.js Armenia',
           },
           {
-            img: '/team/Svetlana_Hovhannisyan.jpg',
+            img: '/team/Svetlana_Hovhannisyan.png',
             name: 'Svetlana Hovhannisyan',
             position: 'Founding Software Engineer at Cambridge Semantics',
           },
           {
-            img: '/team/Vardges_Vardanyan.jpg',
+            img: '/team/Vardges_Vardanyan.png',
             name: 'Vardges Vardanyan',
             position: 'Javascript Engineer at VMWare',
           },
@@ -63,27 +63,27 @@ export default {
       {
         members: [
           {
-            img: '/team/Alexander_Adamyan.jpg',
+            img: '/team/Alexander_Adamyan.png',
             name: 'Alexander Adamyan',
             position: 'Co-Founder at Simply Technologies',
           },
           {
-            img: '/team/Varser_Zakaryan.jpg',
+            img: '/team/Varser_Zakaryan.png',
             name: 'Varser Zakaryan',
             position: 'Project Manager at JavaScript Conference Armenia',
           },
           {
-            img: '/team/Gevorg_Harutyunyan.jpg',
+            img: '/team/Gevorg_Harutyunyan.png',
             name: 'Gevorg Harutyunyan',
             position: 'Front-End Architect at Screenful, Founder of ModularCode',
           },
           {
-            img: '/team/Rouben_Meschian.jpg',
+            img: '/team/Rouben_Meschian.png',
             name: 'Rouben Meschian',
             position: 'Founding Software Engineer at Cambridge Semantics',
           },
           {
-            img: '/team/Edgar_Marukyan.jpg',
+            img: '/team/Edgar_Marukyan.png',
             name: 'Edgar Marukyan',
             position: 'CTO at Renderforest',
           },
@@ -95,6 +95,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.Team {
+  padding: 50px 0;
+}
 
   .MemberCol {
     display: flex;
@@ -116,12 +119,8 @@ export default {
     width: 100%;
     padding-bottom: 100%;
     margin-bottom: 10px;
-    background-size: cover;
     background-position: center;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    border-radius: 50%;
-    filter: grayscale(90%);
+    background-repeat: no-repeat;
     transition: .3s ease all;
   }
 
@@ -156,6 +155,14 @@ export default {
     .MemberCol {
       width: 100%;
       min-width: 100%;
+    }
+
+    .Member {
+      max-width: 280px;
+    }
+
+    .Img {
+      background-size: 80%;
     }
   }
 </style>
