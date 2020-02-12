@@ -15,7 +15,7 @@
         <a class="Icon Icon-Facebook" href="https://www.facebook.com/nodejsarmenia" target="_blank"></a>
       </span>
       <span class="SocialIcon">
-        <a class="Icon Icon-Twitter" href="https://twitter.com/jsconf_am" target="_blank"></a>
+        <a class="Icon Icon-Twitter" href="#" target="_blank"></a>
       </span>
       <span class="SocialIcon">
         <a class="Icon Icon-Instagram" href="https://www.instagram.com/nodejsarmenia/" target="_blank"></a>
@@ -24,7 +24,7 @@
         <a class="Icon Icon-Youtube" href="https://www.youtube.com/channel/UCL-LarRFFQcYdyqFhJ2Pw4w" target="_blank"></a>
       </span>
       <span class="SocialIcon">
-        <a class="Icon Icon-Telegram" href="http://t.me/javascriptarmenia" target="_blank"></a>
+        <a class="Icon Icon-Telegram" href="http://t.me/nodejsarmenia" target="_blank"></a>
       </span>
     </div>
 
@@ -198,6 +198,7 @@ export default {
   font-style: normal;
   line-height: 1.25;
   letter-spacing: 0.5px;
+  text-align: center;
 
   a {
     color: #6cc24a;

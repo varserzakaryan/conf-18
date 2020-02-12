@@ -177,5 +177,11 @@ export default {
     .Img {
       background-size: 80%;
     }
+
+    .Position {
+      &.Green {
+        display: contents;
+      }
+    }
   }
 </style>

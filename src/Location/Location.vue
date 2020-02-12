@@ -41,6 +41,12 @@ export default {
   -webkit-mask-size: contain;
   -ms-mask-size: contain;
   mask-size: contain;
+
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .text {
@@ -51,7 +57,7 @@ export default {
 }
 
 .Map {
-  width: 50vw;
+  width: 100%;
   height: 30vw;
   top: 0;
   left: 0;
@@ -78,7 +84,8 @@ export default {
 
   .Map {
     width: 100%;
-    height: 50vw;
+    height: 70vw;
+    margin: -10%;
   }
 }
 
