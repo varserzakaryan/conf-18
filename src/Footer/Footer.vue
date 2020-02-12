@@ -72,6 +72,10 @@ export default {
   position: relative;
   padding-bottom: 50px;
   background-image: url(./bg.png);
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .LogoContainer {
