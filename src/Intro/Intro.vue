@@ -102,10 +102,6 @@ export default {
   #Titles {
     display: grid;
   }
-
-  .Subtitle {
-    text-shadow: 1px 1px 1px #f5f5f591;
-  }
 }
 
 @media (max-height: 550px) {

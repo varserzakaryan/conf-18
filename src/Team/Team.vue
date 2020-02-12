@@ -55,7 +55,7 @@ export default {
           {
             img: '/team/Svetlana_Hovhannisyan.png',
             name: 'Svetlana Hovhannisyan',
-            position: 'Founding Software Engineer at Cambridge Semantics',
+            position: 'Technical Recruiter at Meettal',
           },
           {
             img: '/team/Vardges_Vardanyan.png',
@@ -125,6 +125,7 @@ export default {
     margin-bottom: 10px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     transition: .3s ease all;
   }
 

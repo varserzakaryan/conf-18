@@ -23,12 +23,12 @@
         ></i>
       </a>
       <nav class="Navigation" v-smooth-scroll="navConfig">
+        <a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
         <a class="Item" href="#Speakers" v-smooth-scroll="navConfig" v-on:click="close">Speakers</a>
         <a class="Item" href="#Sponsors" v-smooth-scroll="navConfig" v-on:click="close">Sponsors</a>
         <a class="Item" href="#Team" v-smooth-scroll="navConfig" v-on:click="close">Team</a>
         <a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a>
         <a class="Item" href="#Faq" v-smooth-scroll="navConfig" v-on:click="close">Faq</a>
-        <a class="Item" href="#Quiz" v-smooth-scroll="navConfig" v-on:click="close">Quiz</a>
         <div class="RequestInvite">
           <Button title="Request an Invite" link="http://bit.ly/joinJSConf2018"></Button>
         </div>
@@ -107,7 +107,7 @@ export default {
     position: fixed;
     min-height: 80px;
     background: #3A3A3A;
-    box-shadow: 0px -5px 15px 8.16px rgba(162, 162, 162, 0.3);
+    box-shadow: 0px -8px 8px 5px rgba(162, 162, 162, 0.3);
   }
 
 }

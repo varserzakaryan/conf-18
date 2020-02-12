@@ -31,6 +31,16 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  -ms-mask: url(./chack.svg) no-repeat 0 0;
+  -webkit-mask: url(./chack.svg) no-repeat 0 0;
+  mask: url(./chack.svg) no-repeat 0 0;
+  -webkit-mask-position: center;
+  -ms-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  -ms-mask-size: contain;
+  mask-size: contain;
 }
 
 .text {
