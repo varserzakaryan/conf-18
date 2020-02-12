@@ -23,7 +23,6 @@
         ></i>
       </a>
       <nav class="Navigation" v-smooth-scroll="navConfig">
-        <a class="Item" href="#About" v-smooth-scroll="navConfig" v-on:click="close">About</a>
         <!--
           <a class="Item" href="#Schedule" v-smooth-scroll="navConfig"
           v-on:click="close">Schedule</a>
@@ -77,7 +76,7 @@ export default {
   },
   computed: {
     isSticked() {
-      return this.scrollPos > 23;
+      return this.scrollPos > window.innerHeight * 0.8;
     },
   },
   created() {
@@ -91,8 +90,8 @@ export default {
 
 <style scoped lang="scss">
 .Header {
+  display: none;
   min-height: 100px;
-  display: flex;
   align-items: center;
   padding: .5em 0;
   position: absolute;
@@ -105,6 +104,7 @@ export default {
   transition: all .3s ease;
 
   &.-sticked {
+    display: flex;
     position: fixed;
     min-height: 80px;
     background: #3A3A3A;

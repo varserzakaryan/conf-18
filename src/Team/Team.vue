@@ -19,6 +19,7 @@
             </div>
             <h3 class="Name">{{member.name}}</h3>
             <h5 class="Position">{{member.position}}</h5>
+            <h5 class="Position Green" v-if="member.greenPosition">{{member.greenPosition}}</h5>
           </div>
         </div>
        </div>
@@ -36,17 +37,20 @@ export default {
           {
             img: '/team/Nairi_Harutyunyan.png',
             name: 'Nairi Harutyunyan',
-            position: 'Backend Engineer at Screenful, Co-Founder at Node.js Armenia',
+            position: 'Backend Engineer at Screenful, Co-Founder at ',
+            greenPosition: 'Node.js Armenia',
           },
           {
             img: '/team/Anna_Harutyunyan.png',
             name: 'Anna Harutyunyan',
-            position: 'Project Manager at Node.js Armenia',
+            position: 'Project Manager at ',
+            greenPosition: 'Node.js Armenia',
           },
           {
             img: '/team/Khachatur_Tovmasyan.png',
             name: 'Khachatur Tovmasyan',
-            position: 'Lead Front-End Engineer at SFL, Co-Founder at Node.js Armenia',
+            position: 'Lead Front-End Engineer at SFL, Co-Founder at ',
+            greenPosition: 'Node.js Armenia',
           },
           {
             img: '/team/Svetlana_Hovhannisyan.png',
@@ -95,9 +99,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.Team {
-  padding: 50px 0;
-}
+  .Team {
+    padding: 50px 0;
+  }
 
   .MemberCol {
     display: flex;
@@ -122,6 +126,14 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     transition: .3s ease all;
+  }
+
+  .Position {
+    display: inline;
+    &.Green {
+      color: #6CC24A;
+      display: block;
+    }
   }
 
   .Member:hover {

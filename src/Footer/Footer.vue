@@ -2,18 +2,27 @@
   <div class="Footer">
 
     <div class="LogoContainer">
-      <a href="#Intro" class="LogoLink">
-        <Logo
-          :size="150" />
+      <a href="#Intro" class="LogoLink" v-smooth-scroll="navConfig">
+        <Logo :size="150" />
       </a>
     </div>
 
     <div class="SocialLinks">
-      <a class="SocialIcon Icon-Github" href="https://github.com/JSConfArmenia/" target="_blank"></a>
-      <a class="SocialIcon Icon-Facebook" href="https://www.facebook.com/jsconf.am/" target="_blank"></a>
-      <a class="SocialIcon Icon-Twitter" href="https://twitter.com/jsconf_am/" target="_blank"></a>
-      <a class="SocialIcon Icon-Instagram" href="https://www.instagram.com/jsconf.am/" target="_blank"></a>
-      <a class="SocialIcon Icon-Youtube" href="https://www.youtube.com/channel/UCkzEOKU959F6_T0OaQBH4VQ/featured" target="_blank"></a>
+      <span class="SocialIcon">
+        <a class="Icon Icon-Github" href="https://github.com/JSConfArmenia/" target="_blank"></a>
+      </span>
+      <span class="SocialIcon">
+        <a class="Icon Icon-Facebook" href="https://www.facebook.com/jsconf.am/" target="_blank"></a>
+      </span>
+      <span class="SocialIcon">
+        <a class="Icon Icon-Twitter" href="https://twitter.com/jsconf_am/" target="_blank"></a>
+      </span>
+      <span class="SocialIcon">
+        <a class="Icon Icon-Instagram" href="https://www.instagram.com/jsconf.am/" target="_blank"></a>
+      </span>
+      <span class="SocialIcon">
+        <a class="Icon Icon-Youtube" href="https://www.youtube.com/channel/UCkzEOKU959F6_T0OaQBH4VQ/featured" target="_blank"></a>
+      </span>
     </div>
 
     <div class="PressRelease">
@@ -38,6 +47,14 @@ import Logo from '../_common/Logo/Logo.vue';
 export default {
   components: {
     Logo,
+  },
+  data() {
+    return {
+      navConfig: {
+        duration: 1000,
+        offset: -66,
+      },
+    };
   },
 };
 </script>
@@ -84,56 +101,73 @@ export default {
 
 .SocialIcon {
   background: center;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   margin: 3px;
-  padding: 5px;
+  padding: 4px;
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
   display: block;
   position: relative;
   overflow: hidden;
+  background-color: #fff;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
 
-  &:after {
-    content: " ";
-    display: block;
-    background-color: #91919145;
-    position: absolute;
-    transition: all .2s ease;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  -webkit-mask:  url(./polygon-green.svg) no-repeat 50% 50%;
+  mask: url(./polygon-green.svg) no-repeat 50% 50%;
 
-  &.active,
   &:hover {
-    &:after {
-      top: 0;
-    }
+    background-color: #6CC24A;
+    cursor: pointer;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+  }
+}
+
+.Icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-color: #333333;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+
+  &:hover {
+    background-color: #fff;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
   }
 }
 
 .Icon-Github {
-  background-image: url('./github.png');
+  -webkit-mask:  url(./github.svg) no-repeat 50% 50%;
+  mask: url(./github.svg) no-repeat 50% 50%;
 }
 
 .Icon-Twitter {
-  background-image: url('./twitter.png');
+  -webkit-mask:  url(./twitter.svg) no-repeat 50% 50%;
+  mask: url(./twitter.svg) no-repeat 50% 50%;
 }
 
 .Icon-Facebook {
-  background-image: url('./facebook.png');
-  background-size: 12px;
+  -webkit-mask:  url(./facebook.svg) no-repeat 50% 50%;
+  mask: url(./facebook.svg) no-repeat 50% 50%;
 }
 
 .Icon-Instagram {
-  background-image: url('./instagram.png');
+  -webkit-mask:  url(./instagram.svg) no-repeat 50% 50%;
+  mask: url(./instagram.svg) no-repeat 50% 50%;
 }
 
 .Icon-Youtube {
-  background-image: url('./youtube.png');
+  -webkit-mask:  url(./youtube.svg) no-repeat 50% 50%;
+  mask: url(./youtube.svg) no-repeat 50% 50%;
 }
 
 .Credits {

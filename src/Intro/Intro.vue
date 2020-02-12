@@ -1,11 +1,14 @@
 <template>
   <section class="Intro" id="Intro">
     <div class="Container">
-      <h1 class="Title">NodeConf 2020<br> Armenia</h1>
-      <h3 class="Subtitle">April 25, 2020</h3>
-      <a href="http://bit.ly/joinJSConf2018" class="Button -default" target="_blank">
+      <div id="Titles">
+        <h1 class="Title"><span>NodeConf</span> 2020 Armenia</h1>
+        <span class="Title Subtitle">
+          Apr <span>25</span>, 2020   -   <span>AUA</span>, Yerevan</span>
+      </div>
+      <!-- <a href="http://bit.ly/joinJSConf2018" class="Button -default" target="_blank">
         Request an Invite
-      </a>
+      </a> -->
     </div>
   </section>
 </template>
@@ -18,29 +21,48 @@ export default {
 
 <style scoped lang="scss">
 .Intro {
-  min-height: 100vh;
   display: flex;
   padding: 150px 0;
   align-items: center;
   justify-content: flex-start;
 }
 
+.Container {
+  justify-content: center;
+  display: flex;
+}
+
 .Title {
-  font-size: 60px;
-  line-height: 70px;
-  font-weight: 900;
-  text-transform: none;
+  font-family: Barlow;
+  font-size: 70px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+#Titles {
+  display: inline-block;
 }
 
 .Subtitle {
-  font-size: 36px;
+  font-size: 24px;
+  float: left;
 }
 
-@media (max-width: 450px) {
+
+@media (max-width: 800px) {
+  .Title {
+    font-size: 50px;
+  }
+
   .Subtitle {
-    text-shadow: 1px 1px 1px #f5f5f591;
+    font-size: 20px;
   }
 }
+
 
 @media (max-width: 700px) {
   .Title {
@@ -48,7 +70,7 @@ export default {
   }
 
   .Subtitle {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -58,11 +80,31 @@ export default {
   }
 
   .Title {
-    line-height: 55px;
+    font-size: 40px;
   }
 
   .Subtitle {
-    font-size: 27px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Title {
+    font-size: 35px;
+  }
+
+  .Subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  #Titles {
+    display: grid;
+  }
+
+  .Subtitle {
+    text-shadow: 1px 1px 1px #f5f5f591;
   }
 }
 
@@ -72,7 +114,6 @@ export default {
   }
 
   .Title {
-    line-height: 55px;
     font-size: 40px;
   }
 }

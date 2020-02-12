@@ -3,7 +3,6 @@
     <Welcome />
     <AppHeader />
     <Intro />
-    <About />
     <!-- <Schedule /> -->
     <!-- <Speakers /> -->
     <!-- <Sponsors /> -->
@@ -19,7 +18,6 @@
 import Welcome from './Welcome/Welcome.vue';
 import AppHeader from './Header/Header.vue';
 import Intro from './Intro/Intro.vue';
-import About from './About/About.vue';
 import Schedule from './Schedule/Schedule.vue';
 import Speakers from './Speakers/Speakers.vue';
 import Sponsors from './Sponsors/Sponsors.vue';
@@ -35,7 +33,6 @@ export default {
     Welcome,
     AppHeader,
     Intro,
-    About,
     Schedule,
     Speakers,
     Sponsors,
