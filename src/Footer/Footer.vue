@@ -126,6 +126,13 @@ export default {
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
+
+    .Icon {
+      background-color: #fff;
+      -webkit-transition: background-color 200ms linear;
+      -ms-transition: background-color 200ms linear;
+      transition: background-color 200ms linear;
+    }
   }
 }
 
@@ -137,13 +144,6 @@ export default {
   -webkit-transition: background-color 200ms linear;
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
-
-  &:hover {
-    background-color: #fff;
-    -webkit-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
-  }
 }
 
 .Icon-Github {
