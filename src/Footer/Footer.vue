@@ -117,6 +117,7 @@ export default {
   transition: background-color 200ms linear;
 
   -webkit-mask:  url(./polygon-green.svg) no-repeat 50% 50%;
+  -ms-mask:  url(./polygon-green.svg) no-repeat 50% 50%;
   mask: url(./polygon-green.svg) no-repeat 50% 50%;
 
   &:hover {
@@ -147,26 +148,31 @@ export default {
 
 .Icon-Github {
   -webkit-mask:  url(./github.svg) no-repeat 50% 50%;
+  -ms-mask:  url(./github.svg) no-repeat 50% 50%;
   mask: url(./github.svg) no-repeat 50% 50%;
 }
 
 .Icon-Twitter {
   -webkit-mask:  url(./twitter.svg) no-repeat 50% 50%;
+  -ms-mask:  url(./twitter.svg) no-repeat 50% 50%;
   mask: url(./twitter.svg) no-repeat 50% 50%;
 }
 
 .Icon-Facebook {
   -webkit-mask:  url(./facebook.svg) no-repeat 50% 50%;
+  -ms-mask:  url(./facebook.svg) no-repeat 50% 50%;
   mask: url(./facebook.svg) no-repeat 50% 50%;
 }
 
 .Icon-Instagram {
   -webkit-mask:  url(./instagram.svg) no-repeat 50% 50%;
+  -ms-mask:  url(./instagram.svg) no-repeat 50% 50%;
   mask: url(./instagram.svg) no-repeat 50% 50%;
 }
 
 .Icon-Youtube {
   -webkit-mask:  url(./youtube.svg) no-repeat 50% 50%;
+  -ms-mask:  url(./youtube.svg) no-repeat 50% 50%;
   mask: url(./youtube.svg) no-repeat 50% 50%;
 }
 
