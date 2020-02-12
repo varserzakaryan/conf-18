@@ -9,19 +9,22 @@
 
     <div class="SocialLinks">
       <span class="SocialIcon">
-        <a class="Icon Icon-Github" href="https://github.com/JSConfArmenia/" target="_blank"></a>
+        <a class="Icon Icon-Github" href="https://github.com/NodeJSArmenia" target="_blank"></a>
       </span>
       <span class="SocialIcon">
-        <a class="Icon Icon-Facebook" href="https://www.facebook.com/jsconf.am/" target="_blank"></a>
+        <a class="Icon Icon-Facebook" href="https://www.facebook.com/nodejsarmenia" target="_blank"></a>
       </span>
       <span class="SocialIcon">
-        <a class="Icon Icon-Twitter" href="https://twitter.com/jsconf_am/" target="_blank"></a>
+        <a class="Icon Icon-Twitter" href="https://twitter.com/jsconf_am" target="_blank"></a>
       </span>
       <span class="SocialIcon">
-        <a class="Icon Icon-Instagram" href="https://www.instagram.com/jsconf.am/" target="_blank"></a>
+        <a class="Icon Icon-Instagram" href="https://www.instagram.com/nodejsarmenia/" target="_blank"></a>
       </span>
       <span class="SocialIcon">
-        <a class="Icon Icon-Youtube" href="https://www.youtube.com/channel/UCkzEOKU959F6_T0OaQBH4VQ/featured" target="_blank"></a>
+        <a class="Icon Icon-Youtube" href="https://www.youtube.com/channel/UCL-LarRFFQcYdyqFhJ2Pw4w" target="_blank"></a>
+      </span>
+      <span class="SocialIcon">
+        <a class="Icon Icon-Telegram" href="http://t.me/javascriptarmenia" target="_blank"></a>
       </span>
     </div>
 
@@ -174,6 +177,12 @@ export default {
   -webkit-mask:  url(./youtube.svg) no-repeat 50% 50%;
   -ms-mask:  url(./youtube.svg) no-repeat 50% 50%;
   mask: url(./youtube.svg) no-repeat 50% 50%;
+}
+
+.Icon-Telegram {
+  -webkit-mask:  url(./telegram.svg) no-repeat 50% 50%;
+  -ms-mask:  url(./telegram.svg) no-repeat 50% 50%;
+  mask: url(./telegram.svg) no-repeat 50% 50%;
 }
 
 .Credits {
