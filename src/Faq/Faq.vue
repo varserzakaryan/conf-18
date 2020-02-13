@@ -6,9 +6,9 @@
             <div class="col-md-6">
                 <h3 class="Question">What is Node Conference Armenia?</h3>
                 <p class="Answer">
-                    Node Conference is a big IT event that brings together a huge number of IT
+                    Node Conference is a tech conference that brings together more than 600 tech
                     professionals to attend talks, workshops, participate in
-                    competitions, get informed about open positions at sponsor IT companies and more.
+                    competitions, get informed about open positions at sponsor IT companies and to have fun.
                 </p>
 
                 <h3 class="Question">Who are the speakers?</h3>
@@ -31,36 +31,33 @@
 
                 <h3 class="Question">When is it going to take place?</h3>
                 <p class="Answer">
-                    The conference will take place from 10:00 to 18:00 on November 3, 2018.
+                    The conference will take place from 10:00 to 17:00 on April 25, 2020.
                 </p>
 
                 <h3 class="Question">Where is it going to be held?</h3>
                 <p class="Answer">
-                    Node Conference Yerevan will be held at the B Building of
+                    NodeConfAM20 will be held at the B Building of
                     <a href="https://goo.gl/maps/HmDBXyu3G9z" target="_blank">American University of Armenia</a>
                     (40 Marshal Baghramyan Ave, Yerevan)․
                 </p>
 
                 <h3 class="Question">How to participate?</h3>
                 <p class="Answer">
-                    The entry of Node Conference Yerevan 2020 is invitation-only so
-                    please make sure to request your invite
-                    <a href="http://bit.ly/joinJSConf2018" target="_blank">here</a>.
-                </p>
+                    The entry of NodeConfAM20 is invitation-only so
+                    please make sure to request your free invite
+                    <a href="http://bit.ly/joinJSConf2018" target="_blank">here</a> in 3 weeks after the application opens. Starting from March 9 the tickets will cost 5000AMD.               </p>
 
             </div>
             <div class="col-md-6">
 
                 <h3 class="Question">How much is the entry-ticket?</h3>
                 <p class="Answer">
-                    The event entry is free of charge.
+                    The event entry is free of charge before March 9. Later it will cost 5000AMD.
                 </p>
 
                 <h3 class="Question">When is the deadline for registration?</h3>
                 <p class="Answer">
-                    There is no deadline but the sooner you register the more
-                    interesting it will be for you as a participant as you will
-                    have the chance to take part in the preconference activities.
+                    The deadline for requesting free tickets ends March 9.
                 </p>
 
                 <h3 class="Question">Who are behind the Node Conference Armenia? </h3>
@@ -72,9 +69,9 @@
                 <h3 class="Question">How can I help the team?</h3>
                 <p class="Answer">
                     Oh, thank you for your kindness.
-                    To help us make the Node Conference Armenia happen please <a href="http://bit.ly/kindninja"
+                    To help us make the NodeConfAM19 happen please <a href="http://bit.ly/kindninja"
                                                                                        target="_blank">apply here</a>
-                    to become a Node Conf ninja volunteer!
+                    to become a Node Conf super volunteer!
                 </p>
 
                 <h3 class="Question">Who supports Node Conference Armenia?</h3>
