@@ -2,16 +2,18 @@
     <section class="Team" id="Team">
         <div class="Container">
             <h2 class="Title">Incredible <span>Team</span></h2>
-            <div class="row"
-                 v-for="(team, teamIndex) in teams"
+            <div v-for="(team, teamIndex) in teams"
                  :key="teamIndex">
-                <div class="col MemberCol"
-                     v-for="(member, index) in team.members"
-                     :key="index">
-                    <div class="Member">
-                        <div class="Img" :style="{ backgroundImage: `url(${member.img})` }"></div>
-                        <h3 class="Name">{{member.name}}</h3>
-                        <h5 class="Position">{{member.position}}</h5>
+                <h3 class="TeamName">{{team.name}}</h3>
+                <div class="row">
+                    <div class="col MemberCol"
+                        v-for="(member, index) in team.members"
+                        :key="index">
+                        <div class="Member">
+                            <div class="Img" :style="{ backgroundImage: `url(${member.img})` }"></div>
+                            <h3 class="Name">{{member.name}}</h3>
+                            <h5 class="Position">{{member.position}}</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -24,6 +26,7 @@ export default {
 	data: () => ({
 		teams: [
 			{
+				name: 'Node.js Armenia',
 				members: [
 					{
 						img: '/team/Nairi_Harutyunyan.png',
@@ -53,6 +56,7 @@ export default {
 				],
 			},
 			{
+				name: 'Tech Events Armenia',
 				members: [
 					{
 						img: '/team/Alexander_Adamyan.png',
@@ -93,6 +97,11 @@ export default {
         padding: 50px 0;
     }
 
+    .TeamName {
+        font-weight: 400;
+        margin: 0 0px 20px 20px;
+    }
+
     .MemberCol {
         display: flex;
         justify-content: center;
@@ -106,7 +115,7 @@ export default {
         max-width: 180px;
         width: 100%;
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 40px;
     }
 
     .Img {
@@ -162,6 +171,12 @@ export default {
 
         .Img {
             background-size: 80%;
+        }
+
+        .TeamName {
+            margin: 0 0px 20px 0;
+            text-align: center;
+            font-size: 25px;
         }
     }
 </style>

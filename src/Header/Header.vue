@@ -18,7 +18,7 @@
 				<a class="Item" href="#Location" v-smooth-scroll="navConfig" v-on:click="close">Location</a>
 				<a class="Item" href="#Faq" v-smooth-scroll="navConfig" v-on:click="close">Faq</a>
 				<div class="RequestInvite">
-					<Button title="Request an Invite" link="http://bit.ly/joinJSConf2018"></Button>
+					<Button title="Request an Invite" link="http://bit.ly/joinNodeConfAM20"></Button>
 				</div>
 			</nav>
 		</div>

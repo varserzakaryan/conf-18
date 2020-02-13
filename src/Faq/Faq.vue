@@ -45,7 +45,7 @@
                 <p class="Answer">
                     The entry of Node Conference Yerevan 2020 is invitation-only so
                     please make sure to request your invite
-                    <a href="http://bit.ly/joinJSConf2018" target="_blank">here</a>.
+                    <a href="http://bit.ly/joinNodeConfAM20" target="_blank">here</a>.
                 </p>
 
             </div>

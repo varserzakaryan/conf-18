@@ -27,7 +27,7 @@ export default {
 		bannerData: {
 			BannerText: 'Join the board of Node Conf 2020 supporting IT companies, be at one of the biggest IT events in Armenia and get your company seen.Become a Node Conf 2020 sponsor!',
 			imageSource: '/banners/illustration-sponsor-v-1@3x.png',
-			buttonLink: 'http://bit.ly/joinJSConf2018',
+			buttonLink: 'http://bit.ly/supportNodeConfAM20',
 			buttonText: 'Become a Sponsor',
 		},
 	}),
