@@ -12,7 +12,7 @@
 		</div>
 		<div class="BannerText" v-bind:class="{ 'left': !imageRight, 'right': imageRight }" :style="{
         fontWeight: `${isBoldText ? 'bold' : ''}`}">
-			<div class="BannerTitle">
+			<div v-if="title" class="BannerTitle">
 				{{ title }}
 			</div>
 			{{text}}
@@ -90,6 +90,7 @@ export default {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		padding-top: 20px;
 	}
 
 	.BannerTitle {
