@@ -36,7 +36,7 @@
 
                 <h3 class="Question">Where is it going to be held?</h3>
                 <p class="Answer">
-                    JavaScript Conference Yerevan will be held at the B Building of
+                    Node Conference Yerevan will be held at the B Building of
                     <a href="https://goo.gl/maps/HmDBXyu3G9z" target="_blank">American University of Armenia</a>
                     (40 Marshal Baghramyan Ave, Yerevan)․
                 </p>
@@ -72,7 +72,7 @@
                 <h3 class="Question">How can I help the team?</h3>
                 <p class="Answer">
                     Oh, thank you for your kindness.
-                    To help us make the JavaScript Conference Armenia happen please <a href="http://bit.ly/kindninja"
+                    To help us make the Node Conference Armenia happen please <a href="http://bit.ly/kindninja"
                                                                                        target="_blank">apply here</a>
                     to become a Node Conf ninja volunteer!
                 </p>
