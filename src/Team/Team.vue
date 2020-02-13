@@ -58,6 +58,7 @@ export default {
 			},
 			{
 				name: 'Tech Events Armenia',
+				isGreen: true,
 				members: [
 					{
 						img: '/team/Alexander_Adamyan.png',
@@ -99,7 +100,7 @@ export default {
     }
 
     .TeamName {
-        font-weight: 400;
+        font-weight: 500;
         margin: 0 0px 20px 20px;
 
         &.Green {
