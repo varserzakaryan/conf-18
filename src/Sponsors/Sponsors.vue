@@ -415,9 +415,6 @@ export default {
 }
 
 @media (max-width: 600px) {
-  .Sponsors {
-    min-height: 800px;
-  }
 
   .Sponsor.-main .Image {
     height: 90px;

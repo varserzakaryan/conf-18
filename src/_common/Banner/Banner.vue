@@ -90,7 +90,7 @@
   }
   .BannerButton {
     z-index: 2;
-    margin-top: 20px;
+    margin: 10px 10px 0 10px;
     display: inline-flex;
   }
 
