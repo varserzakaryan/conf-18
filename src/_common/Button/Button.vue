@@ -5,17 +5,17 @@
 </template>
 
 <script>
-	export default {
-		name: 'Button',
-		props: {
-			title: {
-				type: String,
-			},
-			link: {
-				type: String,
-			},
+export default {
+	name: 'Button',
+	props: {
+		title: {
+			type: String,
 		},
-	};
+		link: {
+			type: String,
+		},
+	},
+};
 </script>
 
 <style lang="scss">

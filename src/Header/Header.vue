@@ -2,16 +2,13 @@
 	<div class="Header" :class="{ '-open': isOpen, '-sticked': isSticked }">
 		<div class="Container HeaderContainer">
 			<div class="LogoContainer">
-				<a href="#Intro"
-				   v-on:click="close">
-					<Logo />
+				<a href="#Intro" v-on:click="close">
+					<Logo/>
 				</a>
 			</div>
 
 			<a class="NavBtn" v-on:click="toggle">
-				<i class="fa"
-				   v-bind:class="{ 'fa-bars': !isOpen , 'fa-times': isOpen}"
-				   aria-hidden="true"></i>
+				<i class="fa" v-bind:class="{ 'fa-bars': !isOpen , 'fa-times': isOpen}" aria-hidden="true"></i>
 			</a>
 			<nav class="Navigation" v-smooth-scroll="navConfig">
 				<a class="Item" href="#Intro" v-smooth-scroll="navConfig" v-on:click="close">Intro</a>
@@ -29,50 +26,50 @@
 </template>
 
 <script>
-	import _throttle from 'lodash/throttle';
-	import Logo from '../_common/Logo/Logo.vue';
-	import Button from '../_common/Button/Button.vue';
+import _throttle from 'lodash/throttle';
+import Logo from '../_common/Logo/Logo.vue';
+import Button from '../_common/Button/Button.vue';
 
-	export default {
-		components: {
-			Logo,
-			Button,
-		},
-		data() {
-			return {
-				scrollPos: window.scrollY,
-				isOpen: false,
-				navConfig: {
-					duration: 1000,
-					offset: -66,
-				},
-			};
-		},
-		methods: {
-			handleScroll() {
-				this.scrollPos = window.scrollY;
+export default {
+	components: {
+		Logo,
+		Button,
+	},
+	data() {
+		return {
+			scrollPos: window.scrollY,
+			isOpen: false,
+			navConfig: {
+				duration: 1000,
+				offset: -66,
 			},
-			toggle(event) {
-				event.preventDefault();
+		};
+	},
+	methods: {
+		handleScroll() {
+			this.scrollPos = window.scrollY;
+		},
+		toggle(event) {
+			event.preventDefault();
 
-				this.isOpen = !this.isOpen;
-			},
-			close() {
-				this.isOpen = false;
-			},
+			this.isOpen = !this.isOpen;
 		},
-		computed: {
-			isSticked() {
-				return this.scrollPos > window.innerHeight * 0.8;
-			},
+		close() {
+			this.isOpen = false;
 		},
-		created() {
-			window.addEventListener('scroll', _throttle(this.handleScroll, 100));
+	},
+	computed: {
+		isSticked() {
+			return this.scrollPos > window.innerHeight * 0.8;
 		},
-		destroyed() {
-			window.removeEventListener('scroll', this.handleScroll);
-		},
-	};
+	},
+	created() {
+		window.addEventListener('scroll', _throttle(this.handleScroll, 100));
+	},
+	destroyed() {
+		window.removeEventListener('scroll', this.handleScroll);
+	},
+};
 </script>
 
 <style scoped lang="scss">

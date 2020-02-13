@@ -16,13 +16,13 @@
 </template>
 
 <script>
-	import Banner from "../_common/Banner/Banner";
+import Banner from '../_common/Banner/Banner.vue';
 
-	export default {
-		components: {
-			Banner,
-		},
-	};
+export default {
+	components: {
+		Banner,
+	},
+};
 </script>
 
 <style scoped lang="scss">

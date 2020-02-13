@@ -21,73 +21,73 @@
 </template>
 
 <script>
-    export default {
-        data: () => ({
-            teams: [
-                {
-                    members: [
-                        {
-                            img: '/team/Nairi_Harutyunyan.png',
-                            name: 'Nairi Harutyunyan',
-                            position: 'Backend Engineer at Screenful, Co-Founder at ',
-                            greenPosition: 'Node.js Armenia',
-                        },
-                        {
-                            img: '/team/Anna_Harutyunyan.png',
-                            name: 'Anna Harutyunyan',
-                            position: 'Project Manager at ',
-                            greenPosition: 'Node.js Armenia',
-                        },
-                        {
-                            img: '/team/Khachatur_Tovmasyan.png',
-                            name: 'Khachatur Tovmasyan',
-                            position: 'Lead Front-End Engineer at SFL, Co-Founder at ',
-                            greenPosition: 'Node.js Armenia',
-                        },
-                        {
-                            img: '/team/Svetlana_Hovhannisyan.png',
-                            name: 'Svetlana Hovhannisyan',
-                            position: 'Technical Recruiter at Meettal',
-                        },
-                        {
-                            img: '/team/Vardges_Vardanyan.png',
-                            name: 'Vardges Vardanyan',
-                            position: 'Javascript Engineer at VMWare',
-                        },
-                    ],
-                },
-                {
-                    members: [
-                        {
-                            img: '/team/Alexander_Adamyan.png',
-                            name: 'Alexander Adamyan',
-                            position: 'Co-Founder at Simply Technologies',
-                        },
-                        {
-                            img: '/team/Varser_Zakaryan.png',
-                            name: 'Varser Zakaryan',
-                            position: 'Project Manager at JavaScript Conference Armenia',
-                        },
-                        {
-                            img: '/team/Gevorg_Harutyunyan.png',
-                            name: 'Gevorg Harutyunyan',
-                            position: 'Front-End Architect at Screenful, Founder of ModularCode',
-                        },
-                        {
-                            img: '/team/Rouben_Meschian.png',
-                            name: 'Rouben Meschian',
-                            position: 'Founding Software Engineer at Cambridge Semantics',
-                        },
-                        {
-                            img: '/team/Edgar_Marukyan.png',
-                            name: 'Edgar Marukyan',
-                            position: 'CTO at Renderforest',
-                        },
-                    ],
-                },
-            ],
-        }),
-    };
+export default {
+	data: () => ({
+		teams: [
+			{
+				members: [
+					{
+						img: '/team/Nairi_Harutyunyan.png',
+						name: 'Nairi Harutyunyan',
+						position: 'Backend Engineer at Screenful, Co-Founder at ',
+						greenPosition: 'Node.js Armenia',
+					},
+					{
+						img: '/team/Anna_Harutyunyan.png',
+						name: 'Anna Harutyunyan',
+						position: 'Project Manager at ',
+						greenPosition: 'Node.js Armenia',
+					},
+					{
+						img: '/team/Khachatur_Tovmasyan.png',
+						name: 'Khachatur Tovmasyan',
+						position: 'Lead Front-End Engineer at SFL, Co-Founder at ',
+						greenPosition: 'Node.js Armenia',
+					},
+					{
+						img: '/team/Svetlana_Hovhannisyan.png',
+						name: 'Svetlana Hovhannisyan',
+						position: 'Technical Recruiter at Meettal',
+					},
+					{
+						img: '/team/Vardges_Vardanyan.png',
+						name: 'Vardges Vardanyan',
+						position: 'Javascript Engineer at VMWare',
+					},
+				],
+			},
+			{
+				members: [
+					{
+						img: '/team/Alexander_Adamyan.png',
+						name: 'Alexander Adamyan',
+						position: 'Co-Founder at Simply Technologies',
+					},
+					{
+						img: '/team/Varser_Zakaryan.png',
+						name: 'Varser Zakaryan',
+						position: 'Project Manager at JavaScript Conference Armenia',
+					},
+					{
+						img: '/team/Gevorg_Harutyunyan.png',
+						name: 'Gevorg Harutyunyan',
+						position: 'Front-End Architect at Screenful, Founder of ModularCode',
+					},
+					{
+						img: '/team/Rouben_Meschian.png',
+						name: 'Rouben Meschian',
+						position: 'Founding Software Engineer at Cambridge Semantics',
+					},
+					{
+						img: '/team/Edgar_Marukyan.png',
+						name: 'Edgar Marukyan',
+						position: 'CTO at Renderforest',
+					},
+				],
+			},
+		],
+	}),
+};
 </script>
 
 <style scoped lang="scss">

@@ -10,18 +10,18 @@
 </template>
 
 <script>
-    export default {
-        props: {
-            size: {
-                type: Number,
-                default: 120,
-            },
-            variation: {
-                type: String,
-                default: 'full',
-            },
-        },
-    };
+export default {
+	props: {
+		size: {
+			type: Number,
+			default: 120,
+		},
+		variation: {
+			type: String,
+			default: 'full',
+		},
+	},
+};
 </script>
 
 <style scoped lang="scss">

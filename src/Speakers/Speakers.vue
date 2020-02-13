@@ -3,10 +3,10 @@
 		<div class="Container">
 			<h2 class="Title">Call for Incredible <span>Speakers</span></h2>
 			<Banner
-				text="Share your knowledge and skills in Node.js with the Armenian Node community. Become a Node Conf 2020 speaker!"
-				image-source="/banners/illustration-speaker@3x.png"
-				button-link="http://bit.ly/joinJSConf2018"
-				button-text="Become a Speaker"
+				:text="bannerData.BannerText"
+				:image-source="bannerData.imageSource"
+				:button-link="bannerData.buttonLink"
+				:button-text="bannerData.buttonText"
 				:image-right="true"
 				:is-bold-text="true"
 			></Banner>
@@ -15,24 +15,29 @@
 </template>
 
 <script>
-	import speakers from '@/_services/speakers';
-	import Banner from "../_common/Banner/Banner";
+import speakers from '../_services/speakers';
+import Banner from '../_common/Banner/Banner.vue';
 
-	export default {
-		components: {
-			Banner,
+export default {
+	components: {
+		Banner,
+	},
+	data: () => ({
+		speakers,
+		speakersList: [],
+		bannerData: {
+			BannerText: 'Share your knowledge and skills in Node.js with the Armenian Node community. Become a Node Conf 2020 speaker!',
+			imageSource: '/banners/illustration-speaker@3x.png',
+			buttonLink: 'http://bit.ly/joinJSConf2018',
+			buttonText: 'Become a Speaker',
 		},
-		data: () => ({
-			speakers,
-			speakersList: [
-			],
-		}),
-		methods: {
-			getSpeaker: function getSpeaker(speakerId) {
-				return this.speakers[speakerId];
-			},
+	}),
+	methods: {
+		getSpeaker: function getSpeaker(speakerId) {
+			return this.speakers[speakerId];
 		},
-	};
+	},
+};
 </script>
 
 <style scoped lang="scss">
