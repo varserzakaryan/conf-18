@@ -49,13 +49,6 @@ export default {
   filter: grayscale(100%);
 }
 
-.text {
-  color: #757575;
-  // font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-}
-
 .Map {
   width: 100%;
   height: 30vw;
@@ -70,16 +63,6 @@ export default {
   .Location {
     flex-direction: column;
     padding: 50px 0;
-  }
-
-  .smart-object {
-    margin-bottom: 15px;
-  }
-
-  .text {
-    display: block;
-    margin-top: 15px;
-    font-size: 25px;
   }
 
   .Map {

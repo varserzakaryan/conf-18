@@ -63,155 +63,157 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.Footer {
-  min-height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: column;
-  position: relative;
-  padding-bottom: 50px;
-  background-image: url(./bg.png);
+  @import '../_styles/colors';
 
-  a {
-    text-decoration: none;
-  }
-}
+  .Footer {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 50px;
+    background-image: url(./bg.png);
 
-.LogoContainer {
-  margin: 20px 0;
-}
-
-.SocialLinks {
-  display: flex;
-  margin-bottom: 15px;
-}
-
-.PressRelease {
-  font-family: Barlow;
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: 0.5px;
-
-  a {
-    color: #6cc24a;
-    text-transform: uppercase;
+    a {
+      text-decoration: none;
+    }
   }
 
-  .AM {
-    color: white;
+  .LogoContainer {
+    margin: 20px 0;
   }
-}
 
-.SocialIcon {
-  background: center;
-  width: 40px;
-  height: 40px;
-  margin: 3px;
-  padding: 4px;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: center;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  background-color: #fff;
-  -webkit-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
+  .SocialLinks {
+    display: flex;
+    margin-bottom: 15px;
+  }
 
-  -webkit-mask:  url(./polygon-green.svg) no-repeat 50% 50%;
-  -ms-mask:  url(./polygon-green.svg) no-repeat 50% 50%;
-  mask: url(./polygon-green.svg) no-repeat 50% 50%;
+  .PressRelease {
+    font-family: Barlow;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
 
-  &:hover {
-    background-color: #6CC24A;
-    cursor: pointer;
+    a {
+      color: $green-primary;
+      text-transform: uppercase;
+    }
+
+    .AM {
+      color: $text-primary;
+    }
+  }
+
+  .SocialIcon {
+    background: center;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    padding: 4px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
 
-    .Icon {
-      background-color: #fff;
+    -webkit-mask:  url(./polygon-green.svg) no-repeat 50% 50%;
+    -ms-mask:  url(./polygon-green.svg) no-repeat 50% 50%;
+    mask: url(./polygon-green.svg) no-repeat 50% 50%;
+
+    &:hover {
+      background-color: $green-primary;
+      cursor: pointer;
       -webkit-transition: background-color 200ms linear;
       -ms-transition: background-color 200ms linear;
       transition: background-color 200ms linear;
+
+      .Icon {
+        background-color: #fff;
+        -webkit-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+      }
     }
   }
-}
 
-.Icon {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  background-color: #333333;
-  -webkit-transition: background-color 200ms linear;
-  -ms-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-}
-
-.Icon-Github {
-  -webkit-mask:  url(./github.svg) no-repeat 50% 50%;
-  -ms-mask:  url(./github.svg) no-repeat 50% 50%;
-  mask: url(./github.svg) no-repeat 50% 50%;
-}
-
-.Icon-Twitter {
-  -webkit-mask:  url(./twitter.svg) no-repeat 50% 50%;
-  -ms-mask:  url(./twitter.svg) no-repeat 50% 50%;
-  mask: url(./twitter.svg) no-repeat 50% 50%;
-}
-
-.Icon-Facebook {
-  -webkit-mask:  url(./facebook.svg) no-repeat 50% 50%;
-  -ms-mask:  url(./facebook.svg) no-repeat 50% 50%;
-  mask: url(./facebook.svg) no-repeat 50% 50%;
-}
-
-.Icon-Instagram {
-  -webkit-mask:  url(./instagram.svg) no-repeat 50% 50%;
-  -ms-mask:  url(./instagram.svg) no-repeat 50% 50%;
-  mask: url(./instagram.svg) no-repeat 50% 50%;
-}
-
-.Icon-Youtube {
-  -webkit-mask:  url(./youtube.svg) no-repeat 50% 50%;
-  -ms-mask:  url(./youtube.svg) no-repeat 50% 50%;
-  mask: url(./youtube.svg) no-repeat 50% 50%;
-}
-
-.Icon-Telegram {
-  -webkit-mask:  url(./telegram.svg) no-repeat 50% 50%;
-  -ms-mask:  url(./telegram.svg) no-repeat 50% 50%;
-  mask: url(./telegram.svg) no-repeat 50% 50%;
-}
-
-.Credits {
-  margin: 20px;
-  font-family: Barlow;
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: 0.5px;
-  text-align: center;
-
-  a {
-    color: #6cc24a;
+  .Icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-color: $gray-primary;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
   }
 
-  .Devs {
-    color: #fff;
+  .Icon-Github {
+    -webkit-mask:  url(./github.svg) no-repeat 50% 50%;
+    -ms-mask:  url(./github.svg) no-repeat 50% 50%;
+    mask: url(./github.svg) no-repeat 50% 50%;
   }
-}
 
-a:not(.LogoLink):not(.SocialIcon) {
-  text-decoration: underline;
-  font-weight: bold;
-}
+  .Icon-Twitter {
+    -webkit-mask:  url(./twitter.svg) no-repeat 50% 50%;
+    -ms-mask:  url(./twitter.svg) no-repeat 50% 50%;
+    mask: url(./twitter.svg) no-repeat 50% 50%;
+  }
+
+  .Icon-Facebook {
+    -webkit-mask:  url(./facebook.svg) no-repeat 50% 50%;
+    -ms-mask:  url(./facebook.svg) no-repeat 50% 50%;
+    mask: url(./facebook.svg) no-repeat 50% 50%;
+  }
+
+  .Icon-Instagram {
+    -webkit-mask:  url(./instagram.svg) no-repeat 50% 50%;
+    -ms-mask:  url(./instagram.svg) no-repeat 50% 50%;
+    mask: url(./instagram.svg) no-repeat 50% 50%;
+  }
+
+  .Icon-Youtube {
+    -webkit-mask:  url(./youtube.svg) no-repeat 50% 50%;
+    -ms-mask:  url(./youtube.svg) no-repeat 50% 50%;
+    mask: url(./youtube.svg) no-repeat 50% 50%;
+  }
+
+  .Icon-Telegram {
+    -webkit-mask:  url(./telegram.svg) no-repeat 50% 50%;
+    -ms-mask:  url(./telegram.svg) no-repeat 50% 50%;
+    mask: url(./telegram.svg) no-repeat 50% 50%;
+  }
+
+  .Credits {
+    margin: 20px;
+    font-family: Barlow;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    text-align: center;
+
+    a {
+      color: $green-primary;
+    }
+
+    .Devs {
+      color: $text-primary;
+    }
+  }
+
+  a:not(.LogoLink):not(.SocialIcon) {
+    text-decoration: underline;
+    font-weight: bold;
+  }
 
 </style>

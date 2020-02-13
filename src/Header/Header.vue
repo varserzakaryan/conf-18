@@ -40,12 +40,12 @@
 <script>
 import _throttle from 'lodash/throttle';
 import Logo from '../_common/Logo/Logo.vue';
-import Button from "../_common/Button/Button";
+import Button from '../_common/Button/Button.vue';
 
 export default {
   components: {
     Logo,
-    Button
+    Button,
   },
   data() {
     return {
@@ -88,144 +88,145 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.Header {
-  display: none;
-  min-height: 100px;
-  align-items: center;
-  padding: .5em 0;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  // background: #fff;
-  z-index: 100;
-  background-color: transparent;
-  transition: all .3s ease;
+  @import '../_styles/colors';
 
-  &.-sticked {
-    display: flex;
-    position: fixed;
-    min-height: 80px;
-    background: #3A3A3A;
-    box-shadow: 0px -8px 8px 5px rgba(162, 162, 162, 0.3);
-  }
-
-}
-
-.HeaderContainer {
-  max-width: 1400px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  padding-left: 130px;
-}
-
-.LogoContainer {
-  position: absolute;
-  left: 15px;
-  z-index: 2;
-}
-
-.Navigation {
-  display: flex;
-  flex-direction: row;
-  // width: 100%;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  font-family: Barlow;
-  font-size: 16px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: 0.5px;
-
-  .Item {
-    display: flex;
+  .Header {
+    display: none;
+    min-height: 100px;
     align-items: center;
-    padding: .5em .8em;
-    color: #fff;
-    margin: 0 .1em;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all .2s ease;
-    position: relative;
-    overflow: hidden;
-
-    &:after {
-      content: " ";
-      display: block;
-      background-color: #b9b9b945;
-      position: absolute;
-      transition: all .25s ease;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-
-    &.active,
-    &:hover {
-      color: #6CC24A;
-      border-bottom: 2px solid #6CC24A;
-    }
-  }
-  .RequestInvite {
-    display: inherit;
-    margin: 0 50px;
-  }
-}
-
-.NavBtn {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  .Navigation {
+    padding: .5em 0;
     position: absolute;
-    left: 0;
-    top: -500px;
-    background: #3A3A3A;
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    padding: 10px;
-    align-items: center;
-    margin-top: 50px;
-    transition: top .3s ease;
-  }
-
-  .Header.-open .Navigation {
     top: 0;
-    transition: top .3s ease;
-  }
+    left: 0;
+    z-index: 100;
+    background-color: transparent;
+    transition: all .3s ease;
 
-  .Navigation .Item {
-    justify-content: center;
-  }
+    &.-sticked {
+      display: flex;
+      position: fixed;
+      min-height: 80px;
+      background: $bg-primary;
+      box-shadow: 0px -8px 8px 5px rgba(162, 162, 162, 0.3);
+    }
 
-  .NavigationButton {
-    display: inline;
   }
 
   .HeaderContainer {
-    position: initial;
+    max-width: 1400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-left: 130px;
+  }
+
+  .LogoContainer {
+    position: absolute;
+    left: 15px;
+    z-index: 2;
+  }
+
+  .Navigation {
+    display: flex;
+    flex-direction: row;
+    // width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+
+    .Item {
+      display: flex;
+      align-items: center;
+      padding: .5em .8em;
+      color: $text-primary;
+      margin: 0 .1em;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all .2s ease;
+      position: relative;
+      overflow: hidden;
+
+      &:after {
+        content: " ";
+        display: block;
+        background-color: $gray-secondary;
+        position: absolute;
+        transition: all .25s ease;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      &.active,
+      &:hover {
+        color: $green-primary;
+        border-bottom: 2px solid $green-primary;
+      }
+    }
+    .RequestInvite {
+      display: inherit;
+      margin: 0 50px;
+    }
   }
 
   .NavBtn {
-    display: inline;
-    top: 0;
-    position: absolute;
-    right: 0;
-    margin: 15px 25px;
-    font-size: 30px;
+    display: none;
   }
 
-  .Header.-open {
-    background: #3A3A3A;
+  @media (max-width: 600px) {
+    .Navigation {
+      position: absolute;
+      left: 0;
+      top: -500px;
+      background: $bg-primary;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 10px;
+      align-items: center;
+      margin-top: 50px;
+      transition: top .3s ease;
+    }
+
+    .Header.-open .Navigation {
+      top: 0;
+      transition: top .3s ease;
+    }
+
+    .Navigation .Item {
+      justify-content: center;
+    }
+
+    .NavigationButton {
+      display: inline;
+    }
+
+    .HeaderContainer {
+      position: initial;
+    }
+
+    .NavBtn {
+      display: inline;
+      top: 0;
+      position: absolute;
+      right: 0;
+      margin: 15px 25px;
+      font-size: 30px;
+    }
+
+    .Header.-open {
+      background: $bg-primary;
+    }
   }
-}
 </style>
