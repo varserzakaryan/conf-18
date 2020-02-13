@@ -28,7 +28,7 @@ export default {
 		bannerData: {
 			BannerText: 'Share your knowledge and skills in Node.js with the Armenian Node community. Become a Node Conf 2020 speaker!',
 			imageSource: '/banners/illustration-speaker@3x.png',
-			buttonLink: 'http://bit.ly/joinJSConf2018',
+			buttonLink: 'http://bit.ly/NodeConfAM20',
 			buttonText: 'Become a Speaker',
 		},
 	}),
