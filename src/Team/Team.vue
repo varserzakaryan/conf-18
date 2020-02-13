@@ -4,7 +4,7 @@
             <h2 class="Title">Incredible <span>Team</span></h2>
             <div v-for="(team, teamIndex) in teams"
                  :key="teamIndex">
-                <h3 class="TeamName">{{team.name}}</h3>
+                <h3 class="TeamName" v-bind:class="{ Green: team.isGreen }">{{team.name}}</h3>
                 <div class="row">
                     <div class="col MemberCol"
                         v-for="(member, index) in team.members"
@@ -27,6 +27,7 @@ export default {
 		teams: [
 			{
 				name: 'Node.js Armenia',
+				isGreen: true,
 				members: [
 					{
 						img: '/team/Nairi_Harutyunyan.png',
@@ -100,6 +101,10 @@ export default {
     .TeamName {
         font-weight: 400;
         margin: 0 0px 20px 20px;
+
+        &.Green {
+            color: #6CC24A;
+        }
     }
 
     .MemberCol {
