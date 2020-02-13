@@ -13,30 +13,30 @@
 </template>
 
 <script>
-	import Welcome from './Welcome/Welcome.vue';
-	import AppHeader from './Header/Header.vue';
-	import Intro from './Intro/Intro.vue';
-	import Speakers from './Speakers/Speakers.vue';
-	import Sponsors from './Sponsors/Sponsors.vue';
-	import Team from './Team/Team.vue';
-	import Location from './Location/Location.vue';
-	import Faq from './Faq/Faq.vue';
-	import AppFooter from './Footer/Footer.vue';
+import Welcome from './Welcome/Welcome.vue';
+import AppHeader from './Header/Header.vue';
+import Intro from './Intro/Intro.vue';
+import Speakers from './Speakers/Speakers.vue';
+import Sponsors from './Sponsors/Sponsors.vue';
+import Team from './Team/Team.vue';
+import Location from './Location/Location.vue';
+import Faq from './Faq/Faq.vue';
+import AppFooter from './Footer/Footer.vue';
 
-	export default {
-		name: 'app',
-		components: {
-			Welcome,
-			AppHeader,
-			Intro,
-			Speakers,
-			Sponsors,
-			Team,
-			Location,
-			Faq,
-			AppFooter,
-		},
-	};
+export default {
+	name: 'app',
+	components: {
+		Welcome,
+		AppHeader,
+		Intro,
+		Speakers,
+		Sponsors,
+		Team,
+		Location,
+		Faq,
+		AppFooter,
+	},
+};
 </script>
 
 <style lang="scss">

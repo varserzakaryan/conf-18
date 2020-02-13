@@ -1,7 +1,9 @@
 <template>
     <div class="Footer">
         <div class="LogoContainer">
-            <a href="#Intro" class="LogoLink" v-smooth-scroll="navConfig"><Logo :size="150" /></a>
+            <a href="#Intro" class="LogoLink" v-smooth-scroll="navConfig">
+                <Logo :size="150"/>
+            </a>
         </div>
         <div class="SocialLinks">
             <span class="SocialIcon">
@@ -17,7 +19,8 @@
                 <a class="Icon Icon-Instagram" href="https://www.instagram.com/nodejsarmenia/" target="_blank"></a>
             </span>
             <span class="SocialIcon">
-                <a class="Icon Icon-Youtube" href="https://www.youtube.com/channel/UCL-LarRFFQcYdyqFhJ2Pw4w" target="_blank"></a>
+                <a class="Icon Icon-Youtube" href="https://www.youtube.com/channel/UCL-LarRFFQcYdyqFhJ2Pw4w"
+                   target="_blank"></a>
             </span>
             <span class="SocialIcon">
                 <a class="Icon Icon-Telegram" href="http://t.me/nodejsarmenia" target="_blank"></a>
@@ -33,27 +36,28 @@
             <a href="https://www.behance.net/Davidtiger" target="_blank">thedesigner</a>,
             coded in Vue.js by <a class="Devs" href="https://github.com/nairihar" target="_blank">@nairihar</a>,
             <a class="Devs" href="https://github.com/tovmassian" target="_blank">@tovmassian</a> and
-            <a class="Devs" href="https://github.com/NodeJSArmenia/conf-20/graphs/contributors" target="_blank">others</a>.
+            <a class="Devs" href="https://github.com/NodeJSArmenia/conf-20/graphs/contributors"
+               target="_blank">others</a>.
         </p>
     </div>
 </template>
 
 <script>
-    import Logo from '../_common/Logo/Logo.vue';
+import Logo from '../_common/Logo/Logo.vue';
 
-    export default {
-        components: {
-            Logo,
-        },
-        data() {
-            return {
-                navConfig: {
-                    duration: 1000,
-                    offset: -66,
-                },
-            };
-        },
-    };
+export default {
+	components: {
+		Logo,
+	},
+	data() {
+		return {
+			navConfig: {
+				duration: 1000,
+				offset: -66,
+			},
+		};
+	},
+};
 </script>
 
 <style scoped lang="scss">
@@ -146,31 +150,37 @@
         -webkit-transition: background-color 200ms linear;
         -ms-transition: background-color 200ms linear;
         transition: background-color 200ms linear;
+
         &-Github {
             -webkit-mask: url(./github.svg) no-repeat 50% 50%;
             -ms-mask: url(./github.svg) no-repeat 50% 50%;
             mask: url(./github.svg) no-repeat 50% 50%;
         }
+
         &-Twitter {
             -webkit-mask: url(./twitter.svg) no-repeat 50% 50%;
             -ms-mask: url(./twitter.svg) no-repeat 50% 50%;
             mask: url(./twitter.svg) no-repeat 50% 50%;
         }
+
         &-Facebook {
             -webkit-mask: url(./facebook.svg) no-repeat 50% 50%;
             -ms-mask: url(./facebook.svg) no-repeat 50% 50%;
             mask: url(./facebook.svg) no-repeat 50% 50%;
         }
+
         &-Instagram {
             -webkit-mask: url(./instagram.svg) no-repeat 50% 50%;
             -ms-mask: url(./instagram.svg) no-repeat 50% 50%;
             mask: url(./instagram.svg) no-repeat 50% 50%;
         }
+
         &-Youtube {
             -webkit-mask: url(./youtube.svg) no-repeat 50% 50%;
             -ms-mask: url(./youtube.svg) no-repeat 50% 50%;
             mask: url(./youtube.svg) no-repeat 50% 50%;
         }
+
         &-Telegram {
             -webkit-mask: url(./telegram.svg) no-repeat 50% 50%;
             -ms-mask: url(./telegram.svg) no-repeat 50% 50%;

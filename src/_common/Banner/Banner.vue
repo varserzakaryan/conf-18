@@ -24,23 +24,23 @@
 </template>
 
 <script>
-	import Button from "../../_common/Button/Button";
+import Button from '../../_common/Button/Button.vue';
 
-	export default {
-		name: "Banner",
-		components: {
-			Button,
-		},
-		props: {
-			imageRight: Boolean,
-			imageSource: String,
-			title: String,
-			text: String,
-			buttonText: String,
-			buttonLink: String,
-			isBoldText: Boolean,
-		},
-	}
+export default {
+	name: 'Banner',
+	components: {
+		Button,
+	},
+	props: {
+		imageRight: Boolean,
+		imageSource: String,
+		title: String,
+		text: String,
+		buttonText: String,
+		buttonLink: String,
+		isBoldText: Boolean,
+	},
+};
 </script>
 
 <style lang="scss">
@@ -51,7 +51,7 @@
 		justify-content: center;
 		align-content: center;
 		flex-wrap: wrap;
-		margin: 50px 0;
+		margin: 50px 0 0 0;
 
 		.left {
 			text-align: left;
